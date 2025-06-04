@@ -5,6 +5,7 @@
     --white-color: #ffffff;
     --button-portfolio: #404BBF;
     --bg-secondary: #F4F4FD;
+    --but-border: #E7E9FC;
 }
 
 body {
@@ -16,12 +17,18 @@ body {
         letter-spacing: 0.020em;
 }
 
+.list {
+    padding: 0;
+    margin: 0;
+}
+
 body li {
     list-style-type: none;
 }
 
 body a {
     text-decoration: none;
+
 }
 
 .nav a {
@@ -87,7 +94,14 @@ div.background {
     background-color: var(--primary-color);
 }
 
+.primary.title {
+    text-align: center;
+    margin:0;
+    margin-bottom: 48px;
+}
+
 div .background .button {
+    text-align: center;
     color: var(--white-color);
     background-color: var(--web);
     font-weight: 500;
@@ -110,6 +124,7 @@ div .background .button {
 }
 
 .button {
+    border: 1px solid transparent;
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -120,8 +135,7 @@ div .background .button {
 .button.portfolio {
     background-color: var(--bg-secondary);
     color: var(--web);
-    width: 69;
-        height: 48;
+    border-color: var(--but-border);
         padding-top: 12px;
         padding-right: 24px;
         padding-bottom: 12px;
@@ -130,8 +144,7 @@ div .background .button {
 }
 
 .button.order {
-    width: 169;
-        height: 56;
+ border-color: var(--button-portfolio);
         top: 428px;
         left: 636px;
         gap: 10px;
@@ -169,3 +182,4 @@ span.footer.text {
 section.bg.our.team {
     background-color: var(--bg-secondary);
 }
+
