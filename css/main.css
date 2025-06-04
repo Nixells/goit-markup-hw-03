@@ -1,0 +1,171 @@
+:root {
+    --primary-color: #2E2F42;
+    --web: #4D5AE5;
+    --body-color: #434455;
+    --white-color: #ffffff;
+    --button-portfolio: #404BBF;
+    --bg-secondary: #F4F4FD;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color:var(--body-color);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.020em;
+}
+
+body li {
+    list-style-type: none;
+}
+
+body a {
+    text-decoration: none;
+}
+
+.nav a {
+    color:var(--web);
+}
+
+nav .link.current {
+    color: var(--primary-color);
+}
+
+.nav .link {
+    color: var(--web);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+}
+
+.nav .link:hover,
+.nav .link:focus {
+    color:var(--body-color)
+}
+
+nav .navsec-navigation:hover,
+nav .navsec-navigation:focus {
+    color: var(--web)
+}
+
+span.logo.web {
+    color:var(--web);
+}
+
+span.logo.studio {
+    color:var(--primary-color);
+}
+
+.logo.web,
+.logo.studio {
+    font-family: Raleway, sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.2;
+        letter-spacing: 0.030em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color:var(--primary-color);
+}
+
+div.background .title {
+    color: var(--white-color);
+    font-family: Roboto;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+}
+
+div.background {
+    background-color: var(--primary-color);
+}
+
+div .background .button {
+    color: var(--white-color);
+    background-color: var(--web);
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.040em;
+}
+
+.secondary.title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+}
+
+.third.title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+}
+
+.button {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.040em;
+        text-align: center;
+}
+
+.button.portfolio {
+    background-color: var(--bg-secondary);
+    color: var(--web);
+    width: 69;
+        height: 48;
+        padding-top: 12px;
+        padding-right: 24px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        border-radius: 4px;
+}
+
+.button.order {
+    width: 169;
+        height: 56;
+        top: 428px;
+        left: 636px;
+        gap: 10px;
+        padding-top: 16px;
+        padding-right: 32px;
+        padding-bottom: 16px;
+        padding-left: 32px;
+        border-radius: 4px;
+
+}
+
+.button.portfolio:hover,
+.button.portfolio:focus,
+div .button.order:hover,
+div .button.order:focus {
+    background-color: var(--button-portfolio);
+    color: var(--white-color);
+}
+
+span.logo.studi {
+    color: var(--white-color);
+    letter-spacing: 0.030em;
+        font-size: 18px;
+        line-height: 1.16;
+}
+
+footer {
+    background-color: var(--primary-color);
+}
+
+span.footer.text {
+    color: var(--white-color);
+}
+
+section.bg.our.team {
+    background-color: var(--bg-secondary);
+}
