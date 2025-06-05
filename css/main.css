@@ -8,6 +8,8 @@
     --but-border: #E7E9FC;
 }
 
+/*base start*/
+
 body {
     font-family: Roboto, sans-serif;
     color:var(--body-color);
@@ -17,11 +19,6 @@ body {
         letter-spacing: 0.020em;
 }
 
-.list {
-    padding: 0;
-    margin: 0;
-}
-
 body li {
     list-style-type: none;
 }
@@ -29,6 +26,59 @@ body li {
 body a {
     text-decoration: none;
 
+}
+div.container {
+    width: 1281px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 156px;
+    padding-right: 156px;
+    outline: 1px solid var(--body-color);
+}
+
+div.container-title {
+    width: 1281px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 156px;
+        padding-right: 156px;
+        outline: 1px solid var(--body-color);
+        background-color: var(--primary-color);
+}
+
+div.container-margin {
+    width: 1281px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid var(--body-color);
+    padding-left: 156px;
+        padding-right: 156px;
+        padding-top: 120px;
+            padding-bottom: 120px;
+}
+
+div.container.font {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+div.container-margin.footer {
+    width: 1281px;
+    padding-bottom: 100px;
+        padding-top: 100px;
+        padding-left: 156px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--primary-color);
+}
+
+/*nav-logo-h*/
+
+span.logo.studi {
+    color: var(--white-color);
+    letter-spacing: 0.030em;
+    font-size: 18px;
+    line-height: 1.16;
 }
 
 .nav a {
@@ -81,6 +131,17 @@ h6 {
     color:var(--primary-color);
 }
 
+/*list-title*/
+
+.primary.title {
+    text-align: center;
+    color: var(--white-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
+    margin-top: 0px;
+    margin-bottom: 48px;
+}
+
 div.background .title {
     color: var(--white-color);
     font-family: Roboto;
@@ -94,12 +155,6 @@ div.background {
     background-color: var(--primary-color);
 }
 
-.primary.title {
-    text-align: center;
-    margin:0;
-    margin-bottom: 48px;
-}
-
 div .background .button {
     text-align: center;
     color: var(--white-color);
@@ -110,19 +165,33 @@ div .background .button {
         letter-spacing: 0.040em;
 }
 
-.secondary.title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        text-align: center;
+.list {
+    margin:0px;
+    padding: 0px;
 }
 
-.third.title {
-        font-weight: 500;
+.list p {
+    margin:0px;
+    padding: 0px;
+}
+
+.secondary-title {
+    text-align: center;
+    margin-bottom: 72px;
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+}
+
+.third-title {
+    margin-top:0px;
+    margin-bottom:8px;
+    font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
 }
 
+/*bcg button,button*/
 .button {
     border: 1px solid transparent;
     font-weight: 500;
@@ -136,11 +205,6 @@ div .background .button {
     background-color: var(--bg-secondary);
     color: var(--web);
     border-color: var(--but-border);
-        padding-top: 12px;
-        padding-right: 24px;
-        padding-bottom: 12px;
-        padding-left: 24px;
-        border-radius: 4px;
 }
 
 .button.order {
@@ -164,22 +228,12 @@ div .button.order:focus {
     color: var(--white-color);
 }
 
-span.logo.studi {
-    color: var(--white-color);
-    letter-spacing: 0.030em;
-        font-size: 18px;
-        line-height: 1.16;
-}
-
-footer {
-    background-color: var(--primary-color);
-}
+/*footer*/
 
 span.footer.text {
     color: var(--white-color);
 }
 
-section.bg.our.team {
+section.our-team div.container-margin {
     background-color: var(--bg-secondary);
 }
-
