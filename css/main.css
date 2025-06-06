@@ -27,43 +27,56 @@ body a {
     text-decoration: none;
 
 }
-div.container {
-    width: 1281px;
+
+.list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.list p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 1176px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 156px;
     padding-right: 156px;
-    outline: 1px solid var(--body-color);
 }
 
-div.container-title {
-    width: 1281px;
+.container-title {
+    width: 1176px;
         margin-left: auto;
         margin-right: auto;
         padding-left: 156px;
         padding-right: 156px;
-        outline: 1px solid var(--body-color);
         background-color: var(--primary-color);
+        padding-bottom: 188px;
 }
 
-div.container-margin {
-    width: 1281px;
+.container-margin {
+    width: 1176px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid var(--body-color);
     padding-left: 156px;
         padding-right: 156px;
         padding-top: 120px;
             padding-bottom: 120px;
 }
 
-div.container.font {
+.container-margin.universal {
+    padding-bottom: 0px;
+}
+
+.container.font {
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
-div.container-margin.footer {
-    width: 1281px;
+.container-margin.footer {
+    width: 1176px;
     padding-bottom: 100px;
         padding-top: 100px;
         padding-left: 156px;
@@ -85,7 +98,7 @@ span.logo.studi {
     color:var(--web);
 }
 
-nav .link.current {
+nav .link-current {
     color: var(--primary-color);
 }
 
@@ -96,48 +109,68 @@ nav .link.current {
         line-height: 1.5;
 }
 
-.nav .link:hover,
-.nav .link:focus {
-    color:var(--body-color)
+.link-help:not(:last-child) {
+    margin-left: auto;
+    margin-right: 40px;
+    }
+
+        .nav .link-current {
+            margin-left: 76px;
+        }
+    
+        .nav .link:hover,
+        .nav .link:focus {
+            color: var(--body-color)
+        }
+    
+        nav .navsec-navigation:hover,
+        nav .navsec-navigation:focus {
+            color: var(--web)
+        }
+    
+        span.logo.web {
+            color: var(--web);
+        }
+    
+        span.logo.studio {
+            color: var(--primary-color);
+        }
+    
+        .logo.web,
+        .logo.studio {
+            font-family: Raleway, sans-serif;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 1.2;
+            letter-spacing: 0.030em;
+        }
+    
+        h2,
+        h3,
+      h4,
+        h5,
+        h6 {
+            color: var(--primary-color);
+        }
+ /*item*/
+ .perspectives .item:not(:last-child) {
+    margin-right: 20px;
 }
 
-nav .navsec-navigation:hover,
-nav .navsec-navigation:focus {
-    color: var(--web)
+.item:not(:last-child) {
+  margin-right: 40px;
 }
 
-span.logo.web {
-    color:var(--web);
+.list .item {
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
-
-span.logo.studio {
-    color:var(--primary-color);
-}
-
-.logo.web,
-.logo.studio {
-    font-family: Raleway, sans-serif;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.2;
-        letter-spacing: 0.030em;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color:var(--primary-color);
-}
-
 /*list-title*/
 
 .primary.title {
     text-align: center;
     color: var(--white-color);
     padding-top: 188px;
-    padding-bottom: 188px;
     margin-top: 0px;
     margin-bottom: 48px;
 }
@@ -165,14 +198,8 @@ div .background .button {
         letter-spacing: 0.040em;
 }
 
-.list {
-    margin:0px;
-    padding: 0px;
-}
-
-.list p {
-    margin:0px;
-    padding: 0px;
+.third-title.img {
+    margin-top: 32px;
 }
 
 .secondary-title {
@@ -207,17 +234,19 @@ div .background .button {
     border-color: var(--but-border);
 }
 
-.button.order {
- border-color: var(--button-portfolio);
-        top: 428px;
-        left: 636px;
-        gap: 10px;
-        padding-top: 16px;
-        padding-right: 32px;
-        padding-bottom: 16px;
-        padding-left: 32px;
-        border-radius: 4px;
 
+.button.order {
+    display: block;
+    margin: auto;
+    border-color: var(--button-portfolio);
+top: 428px;
+    left: 636px;
+    gap: 10px;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    border-radius: 4px;
 }
 
 .button.portfolio:hover,
@@ -234,6 +263,29 @@ span.footer.text {
     color: var(--white-color);
 }
 
-section.our-team div.container-margin {
+.our-team div.container-margin
+ {
     background-color: var(--bg-secondary);
+}
+
+.our-team .item {
+ background-color: var(--white-color);
+ text-align: center;
+ padding-bottom: 32px;
+
+}
+
+/*flex*/
+
+.perspectives .list {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav .list {
+    display: flex;
 }
