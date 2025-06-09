@@ -181,11 +181,11 @@ h6 {
   color: var(--primary-color);
 }
 /*item*/
-.perspectives .item:not(:last-child) {
-  margin-right: 20px;
+.perspectives .list {
+  justify-content: space-evenly;
 }
 
-.item:not(:last-child) {
+.nav .item:not(:last-child) {
   margin-right: 40px;
 }
 
