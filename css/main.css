@@ -129,7 +129,7 @@ span.logo.studio {
   color: var(--web);
 }
 
-nav .linkcurrent {
+nav .link.current {
   color: var(--primary-color);
 }
 
